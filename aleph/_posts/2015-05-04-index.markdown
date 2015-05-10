@@ -1,0 +1,8 @@
+---
+nav: false
+layout: index
+title: aleph
+permalink: /index.html
+---
+
+There will be an introduction here.

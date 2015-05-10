@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<title>aleph</title>
+
+<!-- Metadata & Icons -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-114x114-precomposed.png"/>
+<link rel="shortcut icon" href="favicon.png">
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="/css/reset.css">
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+<link rel="stylesheet" type="text/css" href="/css/pygments.css">
+
+<!-- Typekit -->
+<script type="text/javascript" src="//use.typekit.net/glc8jly.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+</head>
+<body>
+	<div id="container">
+		<div id="nav">
+			<div class="header">
+				<img src="/images/aleph.svg" onerror="this.src='/images/aleph.png'">
+			</div>
+		
+			<h3 id="home"><a href="/">getting started</a></h3>
+
+			<h3>manifold</h3>
+			<ul>
+				{% for post in site.categories.manifold %}
+					<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+			  	{% endfor %}
+				<li><a class="external" href="https://github.com/ztellman/manifold">&raquo; github</a></li>	
+				<li><a class="external" href="/codox/manifold/">&raquo; codox</a></li>
+			</ul>
+		
+			<h3>byte-streams</h3>
+			<ul>
+				{% for post in site.categories.byte-streams %}
+					<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+			  	{% endfor %}
+				<li><a class="external" href="https://github.com/ztellman/byte-streams">&raquo; github</a></li>	
+				<li><a class="external" href="/codox/byte-streams/">&raquo; codox</a></li>
+			</ul>
+		
+			<h3>aleph</h3>
+			<ul>
+				{% for post in site.categories.aleph %}
+				    {% if post.nav != false %}
+						<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+					{% endif %}
+			  	{% endfor %}
+				<li><a class="external" href="https://github.com/ztellman/aleph">&raquo; github</a></li>	
+				<li><a class="external" href="/codox/aleph/">&raquo; codox</a></li>
+				<li><a class="external" href="/aleph/literate.html">&raquo; examples</a></li>
+			</ul>
+		
+		</div>
+	
+		<div id="content">
+			{{ content }}
+		</div>
+	</div>
+</body>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-9249427-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
