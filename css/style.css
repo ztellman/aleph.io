@@ -1,12 +1,28 @@
+html, body {
+  height:100%;
+}
+
+#container {
+	margin-left: 16px;
+}
+
 #nav {
-	margin-left: 20px;
+	background-color: #F5F5FF;
+	padding: 16px;
+	margin-right: 32px;
+	margin-bottom: 16px;
 	float: left;
 	max-width: 200px;
 	text-transform: uppercase;
+	border-radius: 16px;
 	font-weight: 500;
 	font-size: 14px;
 	letter-spacing: 2px;
 	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+#nav img {
+	width: 170px;
 }
 
 #nav .header {
@@ -14,8 +30,7 @@
 }
 
 #nav h3 {
-	text-decoration: underline;
-	color: #606060;
+	color: #808080;
 }
 
 #nav #home {
@@ -27,7 +42,7 @@
 }
 
 #nav ul {
-	padding-left: 10px;
+	padding-left: 4px;
 }
 
 #nav a:link, #nav a:visited {
@@ -49,8 +64,8 @@
 
 #content {
 	max-width: 800px;
-	margin-top: 60px;
-	margin-left: 250px;
+	margin-top: 32px;
+	margin-left: 232px;
 }
 
 #content h1 {
@@ -79,7 +94,7 @@
 	margin-right: 0; 
 } 
 
-#content p , #content ul li {
+#content p , #content ul li, #content td {
 	color: #333333;
 	font-family: "minion-pro",sans-serif;
 	font-size: 18px;
@@ -110,7 +125,7 @@
 	text-decoration: none;
 }
 
-#content p code {
+#content p code, #content ul li code, #content td code {
 	font-size: 14px;
 	background: whitesmoke;
 }
