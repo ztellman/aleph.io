@@ -5,4 +5,9 @@ title: aleph
 permalink: /index.html
 ---
 
-There will be an introduction here.
+**Aleph** is a library for network programming, built on top of [Netty](http://netty.io/).  It provides implementations of the [HTTP](http://aleph.io/aleph/http.html), [TCP](http://aleph.io/aleph/tcp.html), and [UDP](http://aleph.io/aleph/udp.html) protocols, using a consistent and simple stream representation atop each.
+
+**Manifold** is a stream abstraction, [designed expressly to work well with other stream abstractions](http://aleph.io/manifold/rationale.html).  It exposes representations for [deferreds](http://aleph.io/manifold/deferreds.html), which represent a single unrealized value, and [streams](http://aleph.io/manifold/streams.html), which represent many such values.
+
+Finally, **byte-streams** is a library that can transform any byte representation into any other.  Together, these libraries make it possible to use any existing Java or Clojure library to good effect with Aleph.
+
