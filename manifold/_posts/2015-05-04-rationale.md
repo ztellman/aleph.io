@@ -14,7 +14,7 @@ Backpressure is a fundamental property of Java's threading model, as shown by `B
 
 Unfortunately, while all of these abstractions (or [RxJava](https://github.com/Netflix/RxJava), or [Reactive Streams](http://www.reactive-streams.org/), or ...) can be used to similar effects, they don't necessarily work well with each other.  The practical effect of this is that by choosing one abstraction, we often make the others off-limits.  When writing an application, this may be acceptable, if not really desirable.  When writing a library or something meant to be reused, though, it's much worse; only people who have chosen your particular walled garden can use your work.
 
-Manifold provides abstractions that sits at the intersection of all these similar, but incompatible, approaches.  It provides an extensible mechanism for coercing unrealized data into a generic form, and piping data from these generic forms into other stream representations.
+Manifold provides abstractions that sit at the intersection of all these similar, but incompatible, approaches.  It provides an extensible mechanism for coercing unrealized data into a generic form, and piping data from these generic forms into other stream representations.
 
 It has relatively few central ideas:
 
