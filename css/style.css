@@ -63,6 +63,7 @@ html, body {
 	max-width: 900px;	
 	margin-top: 32px;
 	margin-left: 232px;
+	padding-bottom: 32px;
 }
 
 #content h1 {
